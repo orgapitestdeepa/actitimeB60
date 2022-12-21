@@ -13,6 +13,7 @@ public class Script1 extends BaseTest
 	@Test(priority = 1)
 	public void createCustomer()
 	{
+		//generic Util
 		String data = Util.getXlData("./data/input.xlsx","script1",1, 0);
 		test.log(LogStatus.PASS,data);
 		

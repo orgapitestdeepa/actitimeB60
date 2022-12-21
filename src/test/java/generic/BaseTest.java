@@ -58,9 +58,10 @@ public class BaseTest {
 	public void openApp(@Optional(PPT_PATH) String path,Method testMethod) throws Exception
 	{
 		path="./properties/"+path;
-		test = extent.startTest(testMethod.getName());
+		test = extent.startTest(testMethod.getName());//createCust
 		test.log(LogStatus.INFO, "property file:"+path);
 		
+		//from Util
 		String useGrid =  Util.getProperty(path,"USEGRID");
 		String remote =   Util.getProperty(path,"REMOTE");
 		String browser = Util.getProperty(path,"BROWSER");
@@ -103,6 +104,7 @@ public class BaseTest {
 		wait=new WebDriverWait(driver,Duration.ofSeconds(Long.valueOf(sETO)));
 	}
 	
+	//test method from script
 	
 	@AfterMethod
 	public void closeApp(ITestResult result) throws IOException
