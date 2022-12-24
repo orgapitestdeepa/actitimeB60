@@ -8,7 +8,7 @@ public class DemoReport {
 
 	public static void main(String[] args) {
 		ExtentReports extent = new ExtentReports("target/Spark.html");
-		ExtentTest t1 = extent.startTest("test1");
+		ExtentTest t1 = extent.startTest("test1");//any test name
 		t1.log(LogStatus.PASS,"this is pass");
 		
 		ExtentTest t2 = extent.startTest("test2");

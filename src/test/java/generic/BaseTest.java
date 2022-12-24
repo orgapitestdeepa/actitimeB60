@@ -69,7 +69,7 @@ public abstract class BaseTest implements IAutoConst{
 		{
 			test.log(LogStatus.INFO, "Open the "+browser+" Browser in Remote System");
 			DesiredCapabilities capability = new DesiredCapabilities();
-			capability.setBrowserName(browser);
+			capability.setBrowserName(browser);//set the properties of browser- bw name, name of grid
 			driver =new RemoteWebDriver(new URL(remote),capability );
 		}
 		
