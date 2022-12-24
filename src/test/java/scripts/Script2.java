@@ -9,7 +9,7 @@ import generic.BaseTest;
 
 public class Script2 extends BaseTest
 {
-	@Test
+	@Test(enabled=false)
 	public void createCustomer()
 	{
 		test.log(LogStatus.PASS,driver.getTitle());

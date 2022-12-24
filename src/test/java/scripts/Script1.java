@@ -10,7 +10,7 @@ import generic.Util;
 
 public class Script1 extends BaseTest
 {
-	@Test(priority = 1)
+	@Test(priority = 1, enabled=false)
 	public void createCustomer()
 	{
 		//generic Util
